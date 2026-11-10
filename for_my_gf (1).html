@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Mgရဲ့ အချစ်ဆုံးလေးအတွက် ❤️</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      font-family: "Noto Sans Myanmar", "Myanmar Text", sans-serif;
+      color: #54283d;
+      background: radial-gradient(circle at top, #fff 0, #fff0f5 42%, #ffdce8 100%);
+      display: grid;
+      place-items: center;
+      padding: 28px 16px;
+    }
+
+    .card {
+      width: min(680px, 100%);
+      text-align: center;
+      padding: clamp(28px, 7vw, 58px);
+      background: rgba(255, 255, 255, .82);
+      border: 1px solid rgba(255, 255, 255, .9);
+      border-radius: 28px;
+      box-shadow: 0 24px 70px rgba(147, 54, 91, .16);
+      position: relative;
+      z-index: 1;
+      backdrop-filter: blur(8px);
+    }
+
+    .heart {
+      font-size: 54px;
+      animation: beat 1.3s infinite;
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 7vw, 3.2rem);
+      line-height: 1.45;
+      margin: 12px 0;
+    }
+
+    .subtitle {
+      font-size: .95rem;
+      line-height: 1.9;
+      color: #9b6078;
+      letter-spacing: .02em;
+    }
+
+    .message {
+      font-size: 1.12rem;
+      line-height: 2.1;
+      margin: 26px auto;
+      max-width: 540px;
+    }
+
+    .signature {
+      font-size: 1.15rem;
+      line-height: 2;
+      margin-top: 28px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 14px 24px;
+      cursor: pointer;
+      color: white;
+      background: #d94f82;
+      font: 600 1rem "Noto Sans Myanmar", "Myanmar Text", sans-serif;
+      box-shadow: 0 9px 22px rgba(217, 79, 130, .25);
+      transition: transform .2s, background .2s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      background: #c83c70;
+    }
+
+    #surprise {
+      min-height: 35px;
+      margin-top: 20px;
+      color: #bd3f73;
+      font-size: 1.08rem;
+      line-height: 2;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: .85rem;
+      line-height: 1.8;
+      color: #b17b91;
+    }
+
+    .float {
+      position: fixed;
+      bottom: -40px;
+      color: rgba(217, 79, 130, .35);
+      animation: rise linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes beat {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      15% {
+        transform: scale(1.16);
+      }
+
+      30% {
+        transform: scale(1);
+      }
+
+      45% {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes rise {
+      to {
+        transform: translateY(-115vh) rotate(25deg);
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <div class="heart" aria-hidden="true">❤️</div>
+    <div class="subtitle">Mgရဲ့ အချစ်ဆုံးလေးအတွက် သီးသန့်ဖန်တီးထားတာပါ</div>
+    <h1>ချစ်ရတဲ့ ကောင်မလေးရေ 💕</h1>
+    <p class="message">
+      Mgက နေ့တိုင်း ချစ်တယ်လို့ ပြောဖို့ မေ့ချင်မေ့နေနိုင်ပေမယ့်
+      MaMaက Mgဘဝထဲကို အလင်းရောင်တွေ ယူဆောင်လာပေးတဲ့သူလေးပါ။
+      <br>
+      MaMaရဲ့ အပြုံးလေး၊ ရယ်သံလေးနဲ့ MaMaရဲ့ ချစ်စရာအမူအရာလေးတွေက
+      Mgအတွက် အဖိုးတန်ဆုံးအရာတွေပါ။
+      <br><br>
+      Mgဘဝထဲမှာ ရှိနေပေးလို့ ကျေးဇူးတင်ပါတယ်။
+      နောက်တစ်ကြိမ် ပြန်ရွေးချယ်ခွင့်ရရင်လည်း Mg MaMaကိုပဲ ထပ်ရွေးချယ်မှာပါ။
+      <br>
+      Mg Maကို အရမ်းချစ်တယ်နော်။ ❤️
+    </p>
+    <button type="button" onclick="showSurprise()">ဒီစာလေးကို ဖွင့်ကြည့်ပါ 💌</button>
+    <div id="surprise" aria-live="polite"></div>
+    <div class="signature">
+      အချစ်တွေအပြည့်နဲ့၊<br>
+      <strong>MaMaကို အမြဲချစ်နေမယ့်သူ ❤️</strong>
+    </div>
+    <div class="footer">MaMaတစ်ယောက်တည်းအတွက် ချစ်ခြင်းမေတ္တာတွေနဲ့ ဖန်တီးထားတာပါ ✨</div>
+  </main>
+  <script>
+    function showSurprise() {
+      document.getElementById("surprise").textContent =
+        "MaMaက Mgရဲ့ အပျော်ဆုံးအကြောင်းပြချက်၊ အလှဆုံးအတွေးလေးနဲ့ အချစ်ဆုံးသူလေးပါ။ အရမ်းချစ်တယ်နော်။ 💗";
+    }
+    const symbols = ["♡", "♥", "✿"];
+    for (let i = 0; i < 18; i++) {
+      const el = document.createElement("span");
+      el.className = "float";
+      el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+      el.style.left = Math.random() * 100 + "vw";
+      el.style.animationDuration = (9 + Math.random() * 12) + "s";
+      el.style.animationDelay = (-Math.random() * 18) + "s";
+      el.style.fontSize = (16 + Math.random() * 22) + "px";
+      document.body.appendChild(el);
+    }
+  </script>
+</body>
+
+</html>
